@@ -7,7 +7,7 @@ const {
     updateLabour,
     deleteLabour,
     getLabourStats
-} = require('../controllers/labourController');
+} = require('../controllers/labourcontroller');
 
 // GET /labour - Get all labour entries (with optional filters)
 router.get('/', getLabour);
