@@ -85,6 +85,11 @@ app.use(express.json());
 // Serve static files from uploads directory
 app.use('/uploads', express.static('uploads'));
 
+// Root route for API health check
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
+
 // MongoDb Connection using .env for the BuildTrack App 
 const url = process.env.MONGO_URI;
 
